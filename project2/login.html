@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>네이버 로그인</title>
+    <script type="text/javascript" src="https://static.nid.naver.com/js/naverLogin_implicit-1.0.3.js"
+        charset="utf-8"></script>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- 폰트어썸 -->
+    <script src="https://kit.fontawesome.com/73a07a8b2f.js" crossorigin="anonymous"></script>
+
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Nanum+Myeongjo&display=swap');
+
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    ol,
+    ul {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: #242424;
+    }
+
+    img {
+        vertical-align: bottom;
+    }
+
+    body {
+        font-family: "Nanum Myeongjo", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .wrap {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    /* 헤더 */
+    header {
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        height: 90px;
+        top: 0;
+        background-color: #242424;
+        z-index: 999;
+    }
+
+    header h1 img {
+        width: 150px;
+        height: 50px;
+        padding: 30px;
+    }
+
+    header nav ul {
+        display: flex;
+    }
+
+    header nav a {
+        display: block;
+        color: #fff;
+        font-size: 22px;
+        padding: 10px 60px;
+    }
+
+    header .util ul {
+        display: flex;
+        padding: 40px;
+    }
+
+    header .util li {
+        margin-left: 30px;
+    }
+
+    header .util img {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* 전체 */
+    .mainBox {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 150px;
+    }
+
+    /* 딥티크 */
+    .mainBox h4 {
+        font-size: 50px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        letter-spacing: 10px;
+    }
+
+
+
+    /* 입력박스 */
+    .login {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 500px;
+        /* background-color: aquamarine; */
+    }
+
+    .loginBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .loginBox .id {
+        margin-top: 20px;
+    }
+
+    .loginBox .id input {
+        width: 400px;
+        height: 70px;
+        font-size: 20px;
+        text-align: center;
+        border: 1px solid #999;
+        border-radius: 5px;
+    }
+
+    .loginBox .pass {
+        margin-bottom: 15px;
+    }
+
+    .loginBox .pass input {
+        width: 400px;
+        height: 70px;
+        font-size: 20px;
+        text-align: center;
+        border: 1px solid #999;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+
+
+    /* 자동로그인 */
+    .auto {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 50px;
+    }
+
+    .auto label {
+        color: #888;
+        font-size: 15px;
+        margin-left: 10px;
+    }
+
+
+
+    /* 버튼 */
+    .btn .submit {
+        width: 400px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 40px;
+        cursor: pointer;
+        border: 1px solid #888;
+        color: #777;
+        font-size: 22px;
+        background-color: #fff;
+        margin-top: 20px;
+    }
+
+    .submit:hover {
+        background-color: #000;
+        color: #fff;
+    }
+
+
+    /* 찾기 */
+    .find {
+        /* background-color: aqua; */
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        cursor: pointer;
+        margin-top: 30px;
+    }
+
+    .find ul {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-right: 5px;
+    }
+
+    .find ul li {
+        display: flex;
+        font-size: 16px;
+        padding: 0 15px;
+        color: #999;
+    }
+
+    .find li:hover {
+        color: #000;
+    }
+</style>
+
+
+
+<body>
+    <header>
+        <h1><a href="index.html" title="홈으로"><img src="img/logo.png" alt=""></a></h1>
+
+        <nav>
+            <ul>
+                <li><a href="">ABOUT DIPTYQUE</a></li>
+                <li><a href="">NEW & BEST-SELLER</a></li>
+                <li><a href="">FRAGRANCES</a></li>
+                <li><a href="">REVIEW</a></li>
+            </ul>
+        </nav>
+
+        <div class="util">
+            <ul>
+                <li><a href=""><img src="img/login.png" alt=""></a></li>
+                <li><a href=""><img src="img/cart.png" alt=""></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="mainBox">
+        <h4>DIPTYQUE</h4>
+        <div class="login">
+            <div class="loginBox">
+                <div class="id">
+                    <input type="text" placeholder="ID">
+                </div>
+
+                <div class="pass">
+                    <input type="password" placeholder="PASSWORD">
+                </div>
+            </div>
+
+            <div class="auto">
+                <input id="check" type="checkbox" class="check" checked>
+
+                <label for="check"><span class="icon"></span> 자동로그인
+            </div>
+        </div>
+
+        <div class="btn">
+            <input type="submit" class="submit" value="Login">
+        </div>
+
+
+        <div class="find">
+            <ul>
+                <li>비밀번호 찾기</li>
+                <li>아이디 찾기</li>
+                <li>회원가입</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- 네이버 로그인 버튼 노출 영역 -->
+    <div class="wrap">
+        <div id="naver_id_login"></div>
+    </div>
+    <!-- //네이버 로그인 버튼 노출 영역 -->
+    <script type="text/javascript">
+        var naver_id_login = new naver_id_login("3AxuKZmbNqc6kF8g9VWl", "http://sonmandu.dothome.co.kr");
+        var state = naver_id_login.getUniqState();
+        naver_id_login.setButton("green", 1, 40);
+        naver_id_login.setDomain("YOUR_SERVICE_URL");
+        naver_id_login.setState(state);
+        naver_id_login.setPopup();
+        naver_id_login.init_naver_id_login();
+
+    </script>
+
+</html>
