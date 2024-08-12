@@ -61,4 +61,5 @@ $(document).ready(function () {
         $('.shop').find('.list').empty(i)
     });
 
+
 }) //끝

@@ -52,48 +52,66 @@
 
     /* 헤더 */
     header {
-        position: fixed;
-        display: flex;
-        justify-content: space-between;
-        text-align: center;
-        align-items: center;
-        width: 100%;
-        height: 90px;
-        top: 0;
-        background-color: #242424;
-        z-index: 999;
-    }
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    top: 0;
+    background-color: #242424;
+    z-index: 999;
+}
 
-    header h1 img {
-        width: 150px;
-        height: 50px;
-        padding: 30px;
-    }
+header h1 img {
+    width: 150px;
+    height: 50px;
+    padding: 20px;
+}
 
-    header nav ul {
-        display: flex;
-    }
+header nav {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center; 
+}
 
-    header nav a {
-        display: block;
-        color: #fff;
-        font-size: 22px;
-        padding: 10px 60px;
-    }
+header nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
 
-    header .util ul {
-        display: flex;
-        padding: 40px;
-    }
+header nav li {
+    margin: 50px;
+}
 
-    header .util li {
-        margin-left: 30px;
-    }
+header nav li:hover{
+    border-bottom: 1px solid #fff;
+}
 
-    header .util img {
-        width: 40px;
-        height: 40px;
-    }
+header nav a {
+    display: block;
+    color: #fff;
+    font-size: 22px;
+}
+
+header .util ul {
+    display: flex;
+    padding: 20px;
+}
+
+header .util li {
+    margin-left: 30px;
+}
+
+header .util img {
+    width: 40px;
+    height: 40px;
+}
 
     /* 전체 */
     .mainBox {
@@ -103,7 +121,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 150px;
+        margin-top: 250px;
     }
 
     /* 딥티크 */
@@ -245,7 +263,8 @@
         <nav>
             <ul>
                 <li><a href="">ABOUT DIPTYQUE</a></li>
-                <li><a href="">NEW & BEST-SELLER</a></li>
+                <li><a href="">DIPTYQUE CODE</a></li>
+                <li><a href="">DIPTYQUE HISTORY</a></li>
                 <li><a href="">FRAGRANCES</a></li>
                 <li><a href="">REVIEW</a></li>
             </ul>
@@ -253,8 +272,8 @@
 
         <div class="util">
             <ul>
-                <li><a href=""><img src="img/login.png" alt=""></a></li>
-                <li><a href=""><img src="img/cart.png" alt=""></a></li>
+                <li><a href="login.html"><img src="img/login.png" alt=""></a></li>
+                <li class="shopCart"><a href="shopCart.html"><img src="img/cart.png" alt=""></a></li>
             </ul>
         </div>
     </header>
@@ -307,7 +326,6 @@
         naver_id_login.setState(state);
         naver_id_login.setPopup();
         naver_id_login.init_naver_id_login();
-
     </script>
 
 </html>

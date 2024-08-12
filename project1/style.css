@@ -1,0 +1,78 @@
+@charset 'utf-8';
+
+/* 기본설정 */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+body {
+    background-color: cadetblue;
+}
+
+section {
+    width: 50%;
+    margin: 50px auto;
+    height: auto;
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: 5px 5px 10px #000;
+    background-color: aliceblue;
+}
+
+/* 달력세부구조 */
+.ui-datepicker {
+    width: 50%;
+    /* 50%가 최소 크기 */
+    background-color: transparent;
+    /* 투명 */
+}
+
+.ui-datepicker table {
+    font-size: 16px;
+    color: blue;
+}
+
+.ui-datepicker .ui-datepicker-header {
+    background-color: aquamarine;
+}
+
+.ui-datepicker td {
+    padding: 2px;
+    border: 2px solid blue;
+}
+
+.ui-datepicker tr {
+    background-color: skyblue;
+}
+
+.ui-datepicker-today a {
+    background-color: transparent;
+}
+
+/* 스크롤 */
+[data-scroll] {
+    transition: opacity 1s;
+}
+
+[data-scroll="in"] {
+    opacity: 1;
+}
+
+[data-scroll="out"] {
+    opacity: 0;
+}

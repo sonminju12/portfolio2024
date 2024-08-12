@@ -23,51 +23,66 @@
         }
 
         header {
-            background-color: lightgreen;
+            position: fixed;
             display: flex;
             justify-content: space-between;
+            text-align: center;
             align-items: center;
-            height: 80px;
+            width: 100%;
+            height: 90px;
+            top: 0;
+            background-color: #242424;
+            z-index: 999;
+        }
+
+        header h1 img {
+            width: 150px;
+            height: 50px;
             padding: 20px;
-            box-sizing: border-box;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            align-items: center;
         }
 
         header nav ul {
             display: flex;
+            width: 100%;
+            justify-content: space-between;
+            text-align: center;
+            align-items: center;
         }
 
-        header nav ul li a {
+        header nav li {
+            margin: 50px;
+        }
+
+
+        header nav li:hover {
+            border-bottom: 1px solid #fff;
+        }
+
+        header nav a {
             display: block;
-            padding: 20px;
-        }
-
-        header nav ul li a:hover {
-            color: blanchedalmond;
+            color: #fff;
+            font-size: 22px;
         }
 
         header .util ul {
             display: flex;
+            padding: 20px;
         }
 
-        header .util li a {
-            display: block;
-            padding: 10px;
-            position: relative;
+        header .util li {
+            margin-left: 30px;
         }
 
-        header .util li span {
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            font-size: 12px;
-            background-color: red;
-            border-radius: 10px;
-            color: #fff;
-            text-align: center;
-            line-height: 1.8;
-            top: 0px;
-            right: -5px;
-
+        header .util img {
+            width: 40px;
+            height: 40px;
         }
 
         .wrap {
@@ -135,33 +150,33 @@
 
 
     <script>
-        $(document).ready(function(){
+        $(document).ready(function () {
             // 장바구니를 클릭하면 shop이 보여라
-            $('.shopCart').click(function(e){
+            $('.shopCart').click(function (e) {
 
                 //a링크 무력화
                 e.preventDefault()
-            
-                $('.shop').css({'display':'flex'})
+
+                $('.shop').css({ 'display': 'flex' })
 
 
                 //shop reset을 클릭하면 shop이 사라진다
-                $('.reset').click(function(e){  
-                    
+                $('.reset').click(function (e) {
+
                     //button 무력화
 
-                    $('.shop').css({'display':'none'})
-            })
-        });
+                    $('.shop').css({ 'display': 'none' })
+                })
+            });
 
             // 변수
             let i = 0;
             //cart를 클릭했을때, 숫자(변수)가 증가하고 shopCart의 span에 출력
-            $('.cart').click(function(e){
+            $('.cart').click(function (e) {
 
                 //a링크 무력화
                 e.preventDefault()
-                
+
                 i++
                 console.log(i)
 
@@ -179,25 +194,25 @@
                 console.log(timg)
 
                 //shop list에 txt를 계속 출력되게해라
-                $('.shop').find('.list').append('<div>'+(timg+txt)+'<div>')
+                $('.shop').find('.list').append('<div>' + (timg + txt) + '<div>')
 
-                
+
 
             });
-            
+
             // empty 틀릭했을때 장바구니의 숫자가 0이되어라
-            $('.empty').click(function(){ 
-                
+            $('.empty').click(function () {
+
                 //변수 0이되라
-                i=0;
+                i = 0;
 
                 $('.shopCart').find('span').text(i)
                 $('.product2').find('span').text(i)
-                
+
                 //shop list를 비워라
                 $('.shop').find('.list').empty(i)
             });
-            
+
         }) //끝
     </script>
 </head>
@@ -258,7 +273,7 @@
         <div class="product2">
             <h2>제품리스트</h2>
             <div class="list">
-                
+
             </div>
             <p>장바구니갯수<span>00</span></p>
         </div>
@@ -274,7 +289,7 @@
             width: 100%;
             height: 100%;
             position: fixed;
-            background-color: rgba(0, 0, 0,0.5);
+            background-color: rgba(0, 0, 0, 0.5);
             left: 0;
             top: 0;
             display: flex;
@@ -285,7 +300,7 @@
             display: none;
         }
 
-        .product2{
+        .product2 {
             width: 500px;
             height: 300px;
             background-color: palevioletred;
@@ -312,4 +327,5 @@
         }
     </style>
 </body>
+
 </html>
