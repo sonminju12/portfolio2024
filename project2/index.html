@@ -11,13 +11,13 @@
     <script src="https://kit.fontawesome.com/73a07a8b2f.js" crossorigin="anonymous"></script>
 
     <!-- 외부스타일시트 -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- 제이쿼리 CDN -->
     <script src="http://code.jquery.com/jquery-latest.js"></script>
 
     <!-- 제이쿼리내부의 스타일 정보 -->
-    <script src="js.js"></script>
+    <script src="js/js.js"></script>
 </head>
 
 <body>
@@ -37,7 +37,7 @@
         <div class="util">
             <ul>
                 <li><a href="login.html"><img src="img/login.png" alt=""></a></li>
-                <li class="shopCart"><a href="shopCart.html"><img src="img/cart.png" alt=""></a></li>
+                <li class="shopCart"><a href=""><img src="img/cart.png" alt=""></a><span>0</span></li>
             </ul>
         </div>
     </header>
@@ -53,13 +53,6 @@
                     <source src="img/eau_rose.mp4" type="video/mp4">
 
                 </video>
-            </div>
-            <div class="mainVidbtn">
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
             </div>
         </div>
 
@@ -115,9 +108,7 @@
                 <div class="mainTxt2">
                     <h3>DRAWING</h3>
                     <p>
-                        각 향에 대한 진정한 후각적 풍경, 각각의 <br>
-                        향기에는 그림이 있고 각각의 향기가 그려집니다. <br>
-                        타원형 슬라이더로 매혹적인 파노라마의 한 부분을 선택하여 <br>
+                        각 향에 대한 진정한 후각적 풍경, 각각의 향기에는 그림이 있고<br> 각각의 향기가 그려집니다. 타원형 슬라이더로 매혹적인 파노라마의 한 부분을 선택하여
                         향수병 라벨의 앞면과 뒷면에 있는 그림의 각 요소가 <br>
                         향수에 대한 이야기를 전달하도록 했습니다.
                     </p>
@@ -189,66 +180,45 @@
         </div>
 
 
+
+
+
+
+
         <div class="fragrances">
             <div class="name">
                 <h2><img src="img/name4.png" alt=""></h2>
             </div>
 
-            <div class="doson">
-                <div class="dosonTxt">
-                    <img src="img/do.png" alt="" class="do">
-                    <img src="img/son.png" alt="" class="son">
-                </div>
-                <div class="dosonImg">
-                    <img src="img/doson.png" alt="">
-                </div>
+            <div class="slider">
+                <ul>
+                    <li><img src="img/doson_sl.png" alt=""></li>
+                    <li><img src="img/rose_sl.png" alt=""></li>
+                    <li><img src="img/tamdao_sl.png" alt=""></li>
+                    <li><img src="img/dans_sl.png" alt=""></li>
+                </ul>
             </div>
 
-            <div class="rose">
-                <div class="roseTxt">
-                    <img src="img/eau.png" alt="" class="eau">
-                    <img src="img/rose.png" alt="" class="rose">
-                </div>
-                <div class="roseImg">
-                    <img src="img/eau_rose.png" alt="">
-                </div>
-            </div>
-
-            <div class="tamdao">
-                <div class="tamdaoTxt">
-                    <img src="img/tam.png" alt="" class="tam">
-                    <img src="img/dao.png" alt="" class="dao">
-                </div>
-                <div class="tamdaoImg">
-                    <img src="img/tamdao.png" alt="">
-                </div>
-            </div>
-
-
-            <div class="dnas">
-                <div class="dnasTxt">
-                    <img src="img/l'ombre.png" alt="" class="lombre">
-                    <img src="img/dans.png" alt="" class="dans">
-                    <img src="img/l'eau.png" alt="" class="leau">
-                </div>
-                <div class="dnasImg">
-                    <img src="img/lombre.png" alt="">
-                </div>
-            </div>
         </div>
+
+
+
+
+
 
         <div class="fragrancesList">
             <section class="List">
-                <article>
+                <article class>
                     <ul>
-                        <li class="doson"><a href="">
+                        <li class="doson">
+                            <a href="">
                                 <p><img src="img/list1.png" alt=""></p>
-                                <h4>DOSON<p>도손</p>
-                                </h4>
+                                <h4>DO SON<p>도손</p></h4>
                                 <div class="priceLine"></div>
                                 <div class="price"><b>1 size</b><em>\ 218,000</em></div>
                                 <span class="cart">ADD TO BAG</span>
-                            </a></li>
+                            </a>
+                        </li>
                         <li class="rose"><a href="">
                                 <p><img src="img/list2.png" alt=""></p>
                                 <h4>EAU ROSE<p>오 로즈</p><b></b></h4>
@@ -264,18 +234,25 @@
                                 <div class="price"><b>2 size</b><em>\ 226,000</em></div>
                                 <span class="cart">ADD TO BAG</span>
                             </a></li>
-                        <li class="dans"><a href="">
+                        <li class="dans">
+                            <a href="">
                                 <p><img src="img/list4.png" alt=""></p>
                                 <h4>L'OMBRE DANS L'EAU<p>롬브로 단 로</p>
                                 </h4>
                                 <div class="priceLine"></div>
                                 <div class="price"><b>1 size</b><em>\ 215,000</em></div>
                                 <span class="cart">ADD TO BAG</span>
-                            </a></li>
+                            </a>
+                        </li>
                     </ul>
                 </article>
             </section>
         </div>
+
+
+
+
+
 
 
         <div class="review">
@@ -330,26 +307,66 @@
             </div>
         </div>
 
+
+
+
         <div class="shop">
             <div class="cartList">
                 <h2>장바구니</h2>
                 <div class="reset"><i class="fa-solid fa-x"></i></div>
+
                 <div class="checkList"></div>
-                <p>선택제품<span>00</span></p>
+
+                <p>장바구니갯수<span>00</span></p>
             </div>
 
             <div class="btn">
-                <button class="login"><a href="login.html">결제하기</a></button>
-                <button class="empty">장바구니비우기</button>
+                <button class="login">
+                    <a href="login.html">결제하기</a>
+                </button>
+                <button class="empty">
+                    장바구니 비우기
+                </button>
             </div>
         </div>
 
 
 
+        <!-- 마우스 -->
+        <div class="mouse"></div>
+        <div class="contain"></div>
+
 
     </div><!-- 끝 -->
 
-    <footer></footer>
+    <footer>
+        <ul>
+            <li>Follow Diptyque</li>
+
+            <li>
+                <a href="https://www.instagram.com/diptyque/" target="_blank" >
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+
+            <br>
+
+            <b></b>
+
+            <img src="img/logo.png" alt="">
+
+            <li>개인정보처리방침 / 이용약관 / 영상정보처리방침 / 이메일무단수집거부</li>
+            
+            <br>
+
+            <li>본 사이트는 포트폴리오용으로 제작된 사이트입니다.</li>
+
+            <li>Copyright © Son min ju. 2024. All Rights Reserved.</li>
+        </ul>
+    </footer>
 
 
 </body>

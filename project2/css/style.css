@@ -1,0 +1,1187 @@
+@charset 'utf-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+
+/* 기본설정 */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #242424;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+body {
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 100;
+    font-style: normal;
+    overflow-x: hidden;
+}
+
+
+.name img {
+    width: 500px;
+}
+
+::-webkit-scrollbar {
+    width: 18px;
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    height: 5%;
+    border-radius: 20px;
+    background: #000;
+}
+
+
+/* 헤더 */
+header {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    top: 0;
+    background-color: #242424;
+    z-index: 999;
+}
+
+header h1 img {
+    display: flex;
+    width: 150px;
+    height: 50px;
+    padding: 30px;
+}
+
+header nav {
+    width: 1440px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+header nav li:hover {
+    border-bottom: 1px solid #fff;
+}
+
+header nav a {
+    position: relative;
+    display: block;
+    color: #fff;
+    font-size: 20px;
+}
+
+header .util ul {
+    display: flex;
+    padding: 20px;
+}
+
+header .util li {
+    margin-left: 30px;
+}
+
+header .util img {
+    width: 40px;
+    height: 40px;
+}
+
+header .util span {
+    position: absolute;
+    color: #fff;
+}
+
+
+
+
+
+/* 메인비디오 */
+.mainVid {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin: 130px auto;
+    width: 95%;
+    height: 750px;
+}
+
+.mainVid div {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.mainVid video {
+    position: absolute;
+}
+
+.mainVid video video {
+    object-fit: contain;
+}
+
+
+
+
+
+
+
+
+/* 딥티크소개 */
+.AboutDiptyque {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 1000px;
+    margin-top: 120px;
+}
+
+.AboutDiptyque .name {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.About {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.AboutImg {
+    position: relative;
+    height: 100%;
+    width: 50%;
+    margin-top: 50px;
+}
+
+.AboutImg img {
+    position: absolute;
+    width: 550px;
+    height: 650px;
+    right: 0;
+    margin-right: 50px;
+}
+
+.AboutTxt {
+    width: 50%;
+    height: 50%;
+}
+
+.AboutTxt h2 {
+    font-size: 35px;
+    line-height: 70px;
+}
+
+.AboutTxt strong {
+    font-size: 30px;
+}
+
+.AboutTxt p {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.AboutBtn {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    padding: 20px 0;
+    margin-left: 190px;
+}
+
+.AboutBtn span a {
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 1px solid #242424;
+}
+
+.AboutBtn span:hover a {
+    background-color: #242424;
+    color: #fff;
+}
+
+
+/* 딥티크설명 */
+.CODE {
+    width: 100%;
+    height: 950px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #242424;
+    color: #fff;
+    margin-top: -10px;
+}
+
+.CODE .name {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.CODE .intro {
+    display: flex;
+    justify-content: center;
+    width: 1550px;
+    height: 100%;
+    margin-top: 60px;
+}
+
+.CODE .intro .mainTxt1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 35%;
+    height: 50%;
+    line-height: 35px;
+    margin-right: 50px;
+}
+
+
+.CODE .intro .mainTxt1 h3 {
+    font-size: 25px;
+    padding: 10px;
+}
+
+.CODE .intro .mainTxt1 p {
+    font-size: 17px;
+}
+
+
+
+
+/* mainTxt2 */
+.CODE .intro .mainTxt2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 35%;
+    height: 50%;
+    line-height: 35px;
+    margin-left: 50px;
+}
+
+.CODE .intro .mainTxt2 h3 {
+    font-size: 25px;
+    padding: 10px;
+}
+
+.CODE .intro .mainTxt2 p {
+    font-size: 17px;
+}
+
+
+
+
+/* mainImg */
+.CODE .mainImg {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 80%;
+}
+
+.CODE .mainImg img {
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    transition: all 0.5s;
+}
+
+.CODE .mainImg:hover img {
+    transform: rotateY(180deg);
+}
+
+.CODE .mainImg:hover img:nth-child(1) {
+    z-index: 2;
+}
+
+.CODE .mainImg:hover img:nth-child(2) {
+    z-index: 1;
+}
+
+
+
+
+
+/* 연혁 */
+.histroy {
+    width: 100%;
+    height: 950px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 65px;
+    /* background-color: #242424; */
+}
+
+.histroy .name {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.line {
+    width: 4px;
+    height: 600px;
+    background-color: #242424;
+    margin-left: -400px;
+    margin-top: 50px;
+}
+
+.dot {
+    width: 100;
+    height: 100%;
+    position: absolute;
+    margin-left: -7px;
+    cursor: pointer;
+}
+
+.dot b {
+    width: 18px;
+    height: 18px;
+    background-color: #242424;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.dot1 {
+    margin-top: 0;
+}
+
+.dot2 {
+    margin-top: 123px;
+}
+
+.dot3 {
+    margin-top: 243px;
+}
+
+.dot4 {
+    margin-top: 360px;
+}
+
+.dot5 {
+    margin-top: 480px;
+}
+
+.dot6 {
+    margin-top: 600px;
+}
+
+.list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 500px;
+    height: 630px;
+    font-size: 16px;
+    letter-spacing: 3px;
+    margin-left: 60px;
+    text-align: left;
+    margin-top: -5px;
+}
+
+.list p:hover {
+    text-decoration: underline;
+}
+
+.list1 {
+    width: 300px;
+    height: 30px;
+}
+
+.list2 {
+    width: 300px;
+    height: 30px;
+}
+
+.list3 {
+    width: 500px;
+    height: 30px;
+}
+
+.list4 {
+    width: 300px;
+    height: 30px;
+}
+
+.list5 {
+    width: 300px;
+    height: 30px;
+}
+
+.list6 {
+    width: 300px;
+    height: 30px;
+}
+
+.list img {
+    display: none;
+}
+
+.list1 img {
+    position: absolute;
+    width: 120px;
+    margin-top: -70px;
+    margin-left: -230px;
+}
+
+.list2 img {
+    position: absolute;
+    width: 120px;
+    margin-top: -130px;
+    margin-left: -230px;
+}
+
+.list3 img {
+    position: absolute;
+    width: 120px;
+    margin-top: -130px;
+    margin-left: -230px;
+}
+
+.list4 img {
+    position: absolute;
+    width: 120px;
+    margin-top: -130px;
+    margin-left: -230px;
+}
+
+.list5 img {
+    position: absolute;
+    width: 120px;
+    margin-top: -130px;
+    margin-left: -230px;
+}
+
+.list6 img {
+    position: absolute;
+    width: 120px;
+    margin-top: -170px;
+    margin-left: -230px;
+}
+
+.list p {
+    cursor: pointer;
+}
+
+.list .list1:hover img {
+    display: block;
+}
+
+.list .list2:hover img {
+    display: block;
+}
+
+.list .list3:hover img {
+    display: block;
+}
+
+.list .list4:hover img {
+    display: block;
+}
+
+.list .list5:hover img {
+    display: block;
+}
+
+.list .list6:hover img {
+    display: block;
+}
+
+.list span {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+/* 향수설명 */
+.fragrances {
+    width: 100%;
+    height: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #242424;
+    color: #fff;
+}
+
+.fragrances .name {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.slider {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider ul {
+    width: 100%;
+    margin-top: 80px;
+}
+
+.slider li {
+    position: absolute;
+    left: 100%;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.slider li:nth-child(1) {
+    left: 0;
+}
+
+.slider li:nth-child(1) img {
+    width: 850px;
+}
+
+
+.slider li img {
+    width: 1000px;
+    height: 750px;
+}
+
+
+
+
+
+
+
+
+/* 향수리스트 ---------------------------------------------------*/
+.fragrancesList {
+    width: 1440px;
+    height: 850px;
+    margin: 0 auto;
+}
+
+.fragrancesList .List {
+    width: 100%;
+    height: 100%;
+}
+
+.fragrancesList article {
+    width: 100%;
+    height: 100%;
+}
+
+.fragrancesList article ul {
+    width: 100%;
+    height: 760px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.fragrancesList article ul a {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+.fragrancesList .doson {
+    width: 23%;
+    height: 760px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.fragrancesList .doson img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+.fragrancesList .doson h4 {
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.fragrancesList .doson .priceLine {
+    width: 100%;
+    height: 1px;
+    background-color: #242424;
+}
+
+.fragrancesList .doson h4 p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.fragrancesList .doson .price {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.fragrancesList .doson .price b {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.fragrancesList .doson .price em {
+    font-style: normal;
+}
+
+.fragrancesList .doson .cart {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    background-color: #242424;
+    padding: 20px 0;
+    border-radius: 10px;
+}
+
+
+
+
+
+/* 로즈 */
+.fragrancesList .rose {
+    width: 23%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.fragrancesList .rose img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.fragrancesList .rose h4 {
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.fragrancesList .rose .priceLine {
+    width: 100%;
+    height: 1px;
+    background-color: #242424;
+}
+
+.fragrancesList .rose h4 p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.fragrancesList .rose .price {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.fragrancesList .rose .price b {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.fragrancesList .rose .price em {
+    font-style: normal;
+}
+
+.fragrancesList .rose .cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    background-color: #242424;
+    padding: 20px 0;
+    border-radius: 10px;
+}
+
+
+
+
+
+/* 탐다오 */
+.fragrancesList .tamdao {
+    width: 23%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.fragrancesList .tamdao img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.fragrancesList .tamdao h4 {
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.fragrancesList .tamdao .priceLine {
+    width: 100%;
+    height: 1px;
+    background-color: #242424;
+}
+
+.fragrancesList .tamdao h4 p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.fragrancesList .tamdao .price {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.fragrancesList .tamdao .price b {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.fragrancesList .tamdao .price em {
+    font-style: normal;
+}
+
+.fragrancesList .tamdao .cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    background-color: #242424;
+    padding: 20px 0;
+    border-radius: 10px;
+}
+
+
+
+
+
+/* 롬브로 */
+.fragrancesList .dans {
+    width: 23%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.fragrancesList .dans img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.fragrancesList .dans h4 {
+    width: 100%;
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.fragrancesList .dans .priceLine {
+    width: 100%;
+    height: 1px;
+    background-color: #242424;
+}
+
+.fragrancesList .dans h4 p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.fragrancesList .dans .price {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.fragrancesList .dans .price b {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.fragrancesList .dans .price em {
+    font-style: normal;
+}
+
+.fragrancesList .dans .cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    background-color: #242424;
+    padding: 20px 0;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 리뷰 -----------------------------------------------------------------*/
+.review {
+    width: 1440px;
+    height: 850px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.review h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.review .name {
+    width: 100%;
+    height: 150px;
+}
+
+.reviewImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.review ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+.review ul li {
+    width: 21%;
+    position: relative;
+    display: flex;
+    margin-bottom: 60px;
+}
+
+
+.review ul li a {
+    width: 100%;
+}
+
+.review ul li img {
+    width: 250px;
+    height: 250px;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+}
+
+.review ul li:hover img {
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+}
+
+.review ul li:hover p {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.review ul li p {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    font-size: 13px;
+    line-height: 30px;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 장바구니 ----------------------------------------------------*/
+.shop {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 999;
+    display: none;
+}
+
+.cartList {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1000px;
+    height: 700px;
+    background-color: #fff;
+    overflow-y: scroll;
+    border-radius: 10px;
+    overflow-x: hidden;
+}
+
+.cartList .reset {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    font-size: 25px;
+    margin-left: 930px;
+    margin-top: -55px;
+    cursor: pointer;
+}
+
+.cartList .reset:hover {
+    color: red;
+}
+
+.cartList h2 {
+    width: 10%;
+    font-size: 25px;
+    text-align: center;
+    margin: 30px;
+}
+
+.cartList p {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    font-size: 16px;
+    margin-left: 90px;
+    margin-top: 100px;
+    letter-spacing: 2px;
+}
+
+.cartList .list div {
+    color: #fff;
+}
+
+.btn {
+    margin-top: 20px;
+}
+
+.btn button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.cartList .checkList {
+    display: flex;
+}
+
+.checkList {
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    margin-left: 5px;
+    flex-wrap: wrap;
+}
+
+.checkList div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33.3333333333%;
+    height: 55%;
+    font-size: 16px;
+}
+
+.checkList img {
+    display: flex;
+    width: 250px;
+    margin-bottom: 15px;
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
+/* 푸터 ----------------------------------------------------*/
+footer {
+    width: 100%;
+    height: 550px;
+    background-color: #242424;
+}
+
+footer ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul li {
+    color: #fff;
+    font-size: 15px;
+    margin : 15px;
+}
+
+footer ul li:nth-child(1) {
+    font-size: 28px;
+}
+
+footer ul li a {
+    color: #fff;
+}
+
+footer ul li .fa-instagram {
+    font-size: 30px;
+    margin: 0 10px;
+}
+
+footer ul li .fa-youtube {
+    font-size: 30px;
+    margin: 0 10px;
+}
+
+footer ul b {
+    width: 1200px;
+    height: 1px;
+    background-color: #fff;
+}
+
+footer ul img {
+    width: 200px;
+    margin: 30px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 미디어쿼리 */
+@media(min-width:1440px) {
+    body {
+        margin: 0 auto;
+    }
+}

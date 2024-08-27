@@ -1,0 +1,705 @@
+@charset 'utf-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Nanum+Myeongjo&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #242424;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+body {
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 90px;
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+    width: 18px;
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    height: 5%;
+    border-radius: 20px;
+    background: #000;
+}
+
+/* 헤더 */
+header {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    top: 0;
+    background-color: #242424;
+    z-index: 999;
+}
+
+header h1 img {
+    display: flex;
+    width: 150px;
+    height: 50px;
+    padding: 30px;
+}
+
+header nav {
+    width: 1440px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+header nav li:hover {
+    border-bottom: 1px solid #fff;
+}
+
+header nav a {
+    position: relative;
+    display: block;
+    color: #fff;
+    font-size: 20px;
+}
+
+header .util ul {
+    display: flex;
+    padding: 20px;
+}
+
+header .util li {
+    margin-left: 30px;
+}
+
+header .util img {
+    width: 40px;
+    height: 40px;
+}
+
+header .util span {
+    position: absolute;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+/* 설명 */
+
+.wrap {
+    width: 100%;
+    height: 100%;
+}
+
+.shop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 920px;
+    letter-spacing: 2px;
+    margin-top: 50px;
+}
+
+.shopImg {
+    position: relative;
+    width: 350px;
+    height: 500px;
+    border: 1px solid #000;
+    margin-right: 100px;
+}
+
+.shopImg img {
+    position: absolute;
+    width: 250px;
+    padding: 50px;
+}
+
+.shopImg:hover img:nth-child(2) {
+    display: none;
+}
+
+.shopTxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.shopTxt1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 30px;
+}
+
+.shopTxt1 h4 {
+    font-size: 25px;
+}
+
+.shopTxt1 b {
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+.shopTxt1 em {
+    font-size: 16px;
+    font-style: normal;
+    margin-bottom: 8px;
+}
+
+.shopTxt1 p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+.shopTxt2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.shopTxt2 h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.shopTxt2 p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.shopTxt2 input {
+    font-size: 16px;
+}
+
+.ml1 {
+    font-size: 16px;
+    padding: 5px 20px;
+    margin-left: 20px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.ml2 {
+    font-size: 16px;
+    padding: 5px 15px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.minus {
+    font-size: 16px;
+    margin-left: 20px;
+    padding: 5px 10px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.plue {
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.number {
+    text-align: center;
+    padding: 5px 10px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.present {
+    font-size: 16px;
+    padding: 5px 20px;
+    margin-left: 20px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+
+
+
+/*  */
+.shopTxt22 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.like {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.like i {
+    position: absolute;
+    font-size: 30px;
+    margin-top: -10px;
+}
+
+.like:hover i {
+    scale: 1.2;
+}
+
+.btn {
+    display: flex;
+}
+
+.btn a {
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+}
+
+.add {
+    font-size: 16px;
+    padding: 10px 25px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.buy {
+    font-size: 16px;
+    padding: 9px 25px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.shopTxt3 {
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 2px;
+}
+
+.shopTxt2 .ml1:hover {
+    background-color: #242424;
+    color: #fff;
+}
+
+.shopTxt2 .ml2:hover {
+    background-color: #242424;
+    color: #fff;
+}
+
+.shopTxt2 .minus:hover {
+    background-color: #242424;
+    color: #fff;
+}
+
+.shopTxt2 .plue:hover {
+    background-color: #242424;
+    color: #fff;
+}
+
+.shopTxt2 .present:hover {
+    background-color: #242424;
+    color: #fff;
+}
+
+.shopTxt2 .add:hover {
+    background-color: #242424;
+    color: #fff;
+}
+
+.shopTxt2 .buy:hover {
+    background-color: #242424;
+    color: #fff;
+}
+
+
+
+
+.shopTxt2 input.on {
+    background-color: #242424;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 비디오 */
+.mainVid {
+    width: 100%;
+    height: 910px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainVid video {
+    width: 1100px;
+}
+
+
+
+
+
+
+
+
+
+/* 꽃 */
+.flower {
+    display: flex;
+    width: 100%;
+    height: 900px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+}
+
+.flowerImg {
+    position: relative;
+}
+
+.circle {
+    width: 800px;
+    height: 800px;
+}
+
+.leau {
+    position: absolute;
+    width: 300px;
+    left: 30%;
+    margin-left: 10px;
+    top: 20%;
+    margin-top: -20px;
+    z-index: 99;
+}
+
+.flowerTxt {
+    width: 20%;
+}
+
+.flowerTxt .typing {
+    width: 100%;
+    font-size: 30px;
+}
+
+.flower1 {
+    position: absolute;
+    width: 450px;
+    left: 0;
+    margin-left: 10px;
+    top: 10%;
+    margin-top: -60px;
+    z-index: 98;
+}
+
+.flower2 {
+    position: absolute;
+    width: 450px;
+    left: 40%;
+    margin-left: 20px;
+    top: 5%;
+    margin-top: -60px;
+    z-index: 97;
+}
+
+.flower3 {
+    position: absolute;
+    width: 450px;
+    left: 40%;
+    margin-left: 15px;
+    top: 50%;
+    margin-top: -60px;
+}
+
+.flower4 {
+    position: absolute;
+    width: 450px;
+    left: 5%;
+    margin-left: 10px;
+    top: 50%;
+    margin-top: -60px;
+}
+
+.flower5 {
+    position: absolute;
+    width: 300px;
+    left: 5%;
+    margin-left: 10px;
+    top: 43%;
+    margin-top: -60px;
+    z-index: 98;
+}
+
+
+
+
+
+
+
+
+/* 그라피 */
+
+.perfume {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 900px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 160px;
+}
+
+.perfume h4 {
+    font-size: 40px;
+    margin-top: 200px;
+}
+
+.line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 120px;
+}
+
+.lineTxt {
+    position: absolute;
+    font-size: 20px;
+}
+
+.lineTxt div {
+    position: absolute;
+    width: 40%;
+    height: 20%;
+}
+
+.lineTxt div:nth-child(1) {
+    top: -110px;
+    left: 50px;
+}
+
+.lineTxt div:nth-child(2) {
+    top: 180px;
+    left: -250px;
+}
+
+.lineTxt div:nth-child(3) {
+    top: 180px;
+    left: 360px;
+}
+
+.lineTxt div:nth-child(4) {
+    top: 470px;
+    left: 50px;
+}
+
+.nabi {
+    
+}
+
+/* 체크박스 */
+
+.check {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkBox {
+    width: 1440px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.checkBox div {
+    width: 30%;
+    height: 150px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.checkBox div span {
+    width: 15px;
+    height: 15px;
+    padding: 6px 6px;
+    background-color: #fff;
+    border: 1px solid #242424;
+    margin-right: 20px;
+}
+
+.checkImg {
+    position: absolute;
+    width: 1440px;
+    height: auto;
+}
+
+.checkImg img {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
+
+
+.checkImg img:nth-child(1) {
+    top: -105px;
+    left: 230px;
+}
+
+.checkImg img:nth-child(2) {
+    top: 145px;
+    left: 445px;
+}
+
+
+
+
+/* 코멘트 */
+.comment {
+    width: 100%;
+    height: 500px;
+}
+
+.comment h4 {
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.comment ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.comment li {
+    width: 30%;
+    padding: 40px;
+    font-size: 18px;
+    border-bottom: 1px dashed #242424;
+    text-align: center;
+}
+
+.comment span {
+    margin-left: 50px;
+}
+
+
+
+
+/* 푸터 */
+footer {
+    width: 100%;
+    height: 550px;
+    background-color: #242424;
+    margin-top: 300px;
+}
+
+footer ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul li {
+    color: #fff;
+    font-size: 15px;
+    margin : 15px;
+}
+
+footer ul li:nth-child(1) {
+    font-size: 28px;
+}
+
+footer ul li a {
+    color: #fff;
+}
+
+footer ul li .fa-instagram {
+    font-size: 30px;
+    margin: 0 10px;
+}
+
+footer ul li .fa-youtube {
+    font-size: 30px;
+    margin: 0 10px;
+}
+
+footer ul b {
+    width: 1200px;
+    height: 1px;
+    background-color: #fff;
+}
+
+footer ul img {
+    width: 200px;
+    margin: 30px 0;
+}

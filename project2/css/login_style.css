@@ -1,0 +1,254 @@
+@charset 'utf-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Nanum+Myeongjo&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #242424;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+body {
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+::-webkit-scrollbar {
+    width: 18px;
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    height: 5%;
+    border-radius: 20px;
+    background: #000;
+}
+
+.wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* 헤더 */
+header {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    top: 0;
+    background-color: #242424;
+    z-index: 999;
+}
+
+header h1 img {
+    display: flex;
+    width: 150px;
+    height: 50px;
+    padding: 30px;
+}
+
+header nav {
+    width: 1440px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+header nav li:hover {
+    border-bottom: 1px solid #fff;
+}
+
+header nav a {
+    position: relative;
+    display: block;
+    color: #fff;
+    font-size: 20px;
+}
+
+header .util ul {
+    display: flex;
+    padding: 20px;
+}
+
+header .util li {
+    margin-left: 30px;
+}
+
+header .util img {
+    width: 40px;
+    height: 40px;
+}
+
+header .util span {
+    position: absolute;
+    color: #fff;
+}
+
+/* 전체 */
+.mainBox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 250px;
+}
+
+/* 딥티크 */
+.mainBox h4 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    letter-spacing: 10px;
+}
+
+
+
+/* 입력박스 */
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    /* background-color: aquamarine; */
+}
+
+.loginBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginBox .id {
+    margin-top: 20px;
+}
+
+.loginBox .id input {
+    width: 400px;
+    height: 70px;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+.loginBox .pass {
+    margin-bottom: 15px;
+}
+
+.loginBox .pass input {
+    width: 400px;
+    height: 70px;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid #999;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+
+
+/* 자동로그인 */
+.auto {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+
+.auto label {
+    color: #888;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+
+
+/* 버튼 */
+.btn .submit {
+    width: 400px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 40px;
+    cursor: pointer;
+    border: 1px solid #888;
+    color: #777;
+    font-size: 22px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.submit:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+
+/* 찾기 */
+.find {
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.find ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.find ul li {
+    width: 120px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 16px;
+    color: #999;
+}
+
+.find ul li:nth-child(3) {
+    margin-left: -10px;
+}
+
+.find li:hover {
+    color: #000;
+}

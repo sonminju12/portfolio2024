@@ -72,6 +72,10 @@ header nav ul {
     cursor: pointer;
 }
 
+.SNS a {
+    color: #fff;
+}
+
 header nav li:hover {
     text-decoration: underline #fff;
 }
