@@ -1,19 +1,30 @@
-@charset 'utf-8';
+ @charset 'utf';
 
-/* 기본설정 */
 * {
     padding: 0;
     margin: 0;
 }
 
-ol,
-ul {
+ol, ul {
     list-style: none;
+    color: 41280B;
 }
 
 a {
     text-decoration: none;
-    color: #000;
+    color: #41280B;
+}
+
+p {
+    color: #41280B;
+}
+
+span {
+    color: #41280B;
+}
+
+h2 {
+    color: #41280B;
 }
 
 img {
@@ -21,58 +32,767 @@ img {
 }
 
 body {
-    background-color: cadetblue;
-}
-
-section {
-    width: 50%;
-    margin: 50px auto;
-    height: auto;
-    border-radius: 10px;
-    padding: 50px;
-    box-shadow: 5px 5px 10px #000;
-    background-color: aliceblue;
-}
-
-/* 달력세부구조 */
-.ui-datepicker {
-    width: 50%;
-    /* 50%가 최소 크기 */
-    background-color: transparent;
-    /* 투명 */
-}
-
-.ui-datepicker table {
+    background-color: #FFF1E2;
     font-size: 16px;
-    color: blue;
+    /* width: 1440px;
+    margin: 0 auto; */
 }
 
-.ui-datepicker .ui-datepicker-header {
-    background-color: aquamarine;
+/* 큰제목 */
+.name {
+    font-size: 30px;
+    text-align: center;
+    color: #41280B;
 }
 
-.ui-datepicker td {
-    padding: 2px;
-    border: 2px solid blue;
+
+
+/* 더보기 버튼 */
+.btn {
+    display: inline-block;
+    background-color: #EDD9C4;
+    border-radius: 50px; 
+    font-size: 14px;
+    padding: 10px;
 }
 
-.ui-datepicker tr {
-    background-color: skyblue;
+
+
+
+/* 헤더 */
+header{
+    display: flex;
+    padding: 25px 0;
+    justify-content: center;
+    align-items: center;
+} 
+
+header img{
+    width: 170px;
+    height: 50px;
+    margin-right: 40px;
 }
 
-.ui-datepicker-today a {
-    background-color: transparent;
+.nav {
+    text-align: center;
+    margin-right: 40px;
 }
 
-/* 스크롤 */
-[data-scroll] {
-    transition: opacity 1s;
+.nav ul {
+    width: 950px;
+    display: flex; 
+    border-radius: 50px; 
+    background-color: #EDD9C4;
+    justify-content: space-around;
 }
 
-[data-scroll="in"] {
-    opacity: 1;
+.nav a {
+    font-size: 18px;
+    display: block;
+    padding: 15px;
+    border-radius: 10px;
 }
 
-[data-scroll="out"] {
-    opacity: 0;
+.util {
+    text-align: center;
+}
+
+.util ul {
+    display: flex;
+}
+
+.util li:nth-child(2) {
+    border-radius: 30px; 
+    background-color: #C6AD97;
+}
+
+.util a {
+    width: 60px;
+    display: block;
+    font-size: 15px;
+    padding: 15px;
+}
+
+
+
+
+
+
+/* 메인 */
+.heroBox {
+    position: relative;
+}
+
+.hero {
+    position: absolute;
+    left: 0;
+    margin-top: 100px;
+} 
+
+.hero h2 {
+    font-size: 120px;
+    color: #183811;
+}
+
+.main_Img{
+
+}
+
+.main_Img .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:780px;
+}
+
+.main_Img .img img{
+    max-width: 100%;
+}
+
+.mainTxt {
+    position: absolute;
+    left: 800px;
+    bottom: -80px;
+    margin-bottom: 200px;
+    text-align: right;
+}
+
+.mainTxt h2 {
+    font-size: 130px;
+    color: #183811;
+    margin-bottom: -30px;
+}
+
+.mainTxt h4 {
+    font-size: 60px;
+    color: #183811;
+}
+
+.mainTxt p {
+    width: 500px;
+    text-align: right;
+    font-size: 16px;
+}
+
+
+
+
+
+/* 박물관안내 */
+.section1 .name {
+    padding-bottom: 100px;
+    padding-top: 80px;
+}
+
+.infoBox {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+
+.notice {
+    width: 45%;
+    padding-right: 100px;
+}
+
+.notice h2 {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+
+.notice li a{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    border-bottom: #000 1px dashed ;
+    padding-bottom: 10px;
+}
+
+
+
+.info {
+    width:  45%;
+}
+
+.info h2 {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.infoFull {
+    
+}
+
+.info li{
+    margin-bottom: 30px;
+    border-bottom: #000 1px dashed ;
+}
+
+.info a {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+
+
+.news {
+    width: 45%;
+    padding-right: 100px;
+}
+
+.news h2 {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+.news li {
+    margin-bottom: 30px;
+    border-bottom: #000 1px dashed ;
+}
+
+.news a {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+.review {
+    width: 45%;
+}
+
+.review h2 {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+.review li {
+    margin-bottom: 30px;
+    border-bottom: #000 1px dashed ;
+}
+
+.review a {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+/* 박물관소개 */
+
+.section2 .name {
+    padding-top: 130px;
+    padding-bottom: 60px;
+}
+
+.coffeeBox {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.coffeeBox img {
+    width: 500px;
+    height: 500px;
+    border-radius: 300px;
+}
+
+.coffeeBox p {
+    height: 100px;
+    padding-top: 30px;
+}
+
+.coffeeBox h2 {
+    padding-bottom: 40px;
+}
+
+
+
+/* 체험안내 */
+
+.section3 .name {
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+.experience {
+    
+}
+
+.experience img{
+    width: 100%;
+    height: 350px;
+}
+
+.experience p{
+    text-align: right;
+    position: absolute;
+    right: 30px;
+    bottom: 25px;
+}
+
+.experience ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.experience span{
+    display: block;
+    margin-bottom: 15px;
+}
+
+.experience strong {
+    display: block;
+    font-size: 25px;
+    margin-bottom: 18px;
+}
+
+.experience li {
+    position: relative;
+    
+}
+.experience a {
+    color: #41280B;
+    font-size: 20px;
+}
+
+.experience li:nth-child(1) {
+    width: 48%;
+
+}
+.experience li:nth-child(2) {
+    width: 48%;
+}
+.experience li:nth-child(3) {
+    width: 48%;
+    padding-top: 80px;
+}
+
+
+
+
+
+
+
+
+/* 체험예약 */
+
+.section4 .name {
+    padding-bottom: 50px;
+    padding-top: 100px;
+}
+
+.section4 .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 650px;
+}
+
+.section4 .title .per {
+    width: 500px;
+    border-right: 1px solid #000;
+}
+
+.section4 .title .wak {
+    width:500px;
+    border-right: 1px solid #000;
+}
+
+.section4 .title .binu {
+    width: 500px;
+}
+
+.section4 .title h4{
+    
+}
+
+.section4 .title p{
+    display: none;
+}
+
+
+
+.section4 .titleBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.section4 .oneBox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 1000px;
+    border: #EDD9C4;
+    border-radius: 60px;
+    background-color: #EDD9C4;
+    padding: 20px;
+}
+
+.section4 .oneBox li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.section4 .oneBox a {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 60px;
+    margin-left: 10px;
+}
+.section4 .oneBox a i {
+    padding-right: 10px;
+    font-size: 25px;
+}
+
+.section4 .twoBox {
+    display: flex;
+    font-size: 18px;
+    margin-left: 30px;
+}
+
+.section4 .twoBox li:nth-child(1){
+    background-color: #EDD9C4;
+    padding: 20px;
+    border: 1px solid #EDD9C4;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.section4 .twoBox li:nth-child(2){
+    padding: 20px;
+    background-color: #E2CEB9;
+    border: 1px solid #EDD9C4;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.section4 .oneBox ul {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+
+
+/* 포토갤러리 */
+.section5 {
+    position: relative;
+}
+
+.section5 .name {
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+.section5 .gallery ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}
+
+.section5 .gallery li{
+    position: absolute;
+}
+
+
+.section5 .gallery a{
+
+}
+
+.section5 .gallery img{
+    width: 1000px;
+    height: 700px;
+}
+
+
+
+/* 산책로&포토존 */
+.section6 {
+    
+}
+
+.section6 .name{
+    padding-bottom: 100px;
+    padding-top: 130px;
+}
+
+.section6Img {
+    display: flex;
+    justify-content: center;
+}
+
+/* 산책로 */
+
+.section6 .san{
+    width: 50%;
+    position: relative;
+}
+
+.section6 .san ul{
+    height: 600px;
+}
+
+.section6 .san li{
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+}
+
+.section6 .san img{
+    width: 95%;
+    height: 550px;
+}
+
+/*포토존 */
+.section6 .po{
+    width: 50%;
+    position: relative;
+}
+
+.section6 .po ul{
+    height: 600px;
+}
+
+.section6 .po li{
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.section6 .po img{
+    width: 95%;
+    height: 550px;
+}
+
+
+
+
+
+
+
+/* 주변관광지 */
+.section7{
+
+}
+
+.section7 .name{
+    padding-bottom: 150px;
+    padding-top: 120px;
+}
+
+
+.section7 .sectionBox{
+    
+}
+
+.sectionBox .imgBox{
+    
+}
+
+.section7 .imgBox img{
+    width: 1300px;
+    height: 700px;
+}
+
+.section7 .juImg1 {
+    display: flex;
+    justify-content: start;
+}
+
+.section7 .juImg1 .txtBox{
+    
+}
+
+.section7 .juImg2{
+    display: flex;
+    justify-content: end;
+    text-align: right;
+}
+
+
+.section7 .juImg2 .txtBox{
+
+}
+
+.section7 .juImg3{
+    display: flex;
+    justify-content: start;
+}
+
+
+.section7 .juImg3 .txtBox{
+    
+}
+
+
+.section7 .juImg4{
+    display: flex;
+    justify-content: end;
+    text-align: right;
+}
+
+
+.section7 .juImg4 .txtBox{
+    
+}
+
+
+.section7 .txtBox{}
+
+.section7 .txtBox h4{}
+
+.section7 .txtBox p{}
+
+
+
+
+
+
+/* 오시는길 */
+.section8{
+    
+}
+
+.section8 .name{
+    padding-bottom: 50px;
+    padding-top: 60px;
+}
+
+.section8 .map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.section8 .mapTop {
+    display: flex;
+    justify-content: center;
+}
+.section8 .mapTxt{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mapTxt h4{
+    font-size: 25px;
+}
+
+.mapTxt ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.mapTxt img{
+    width: 30px;
+    height: 30px;
+}
+
+.mapTxt li:nth-child(1){
+    background-color: #EDD9C4;
+    padding: 10px;
+    border: 1px solid #EDD9C4;
+    border-radius: 40px;
+}
+
+.mapTxt li:nth-child(2){
+    background-color: #EDD9C4;
+    padding: 10px;
+    border: 1px solid #EDD9C4;
+    border-radius: 40px;
+    margin-left: 20px;
+}
+
+.mapBottom p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+
+.section4 .twoBox {
+    display: flex;
+    font-size: 18px;
+    margin-left: 30px;
+}
+
+
+
+
+/* 푸터 */
+footer {
+    font-size: 18px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    align-items: center;
+}
+
+
+
+
+
+/* 미디어쿼리구간설정############################################### */
+
+/* 와이드데스크탑 설정 */
+
+/* 1280px 이상일때설정 */
+@media(min-width:1440px) {
+
+
+    header, .util, .heroBox, .section1, .section2, .section3, .section4, .section5, .section6, .section8, .copyright {
+        width: 1440px;
+        margin: 0 auto;
+    }
+
+    .notice_inner {
+        width: 620px;
+
+    }
+
+    .promo_inner {
+        width: 620px;
+    }
+
 }
