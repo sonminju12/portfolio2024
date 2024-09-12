@@ -596,7 +596,12 @@ h3 span:nth-child(9) {
     margin-top: 30px;
 }
 
-.chungju p:hover {
+.conceptBtn1:hover {
+    background-color: #242424;
+    color: #fff;
+}
+
+.chungju a:hover p {
     background-color: #242424;
     color: #fff;
 }
@@ -639,7 +644,13 @@ h3 span:nth-child(9) {
     margin-top: 30px;
 }
 
-.diptuque p:hover{
+.diptuque a:hover p{
+    background-color: #242424;
+    color: #fff;
+}
+
+
+.conceptBtn2:hover {
     background-color: #242424;
     color: #fff;
 }
@@ -686,7 +697,13 @@ h3 span:nth-child(9) {
     margin-top: 30px;
 }
 
-.seoinguk p:hover {
+.seoinguk a:hover p {
+    background-color: #242424;
+    color: #fff;
+}
+
+
+.conceptBtn3:hover {
     background-color: #242424;
     color: #fff;
 }
