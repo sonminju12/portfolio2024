@@ -505,10 +505,32 @@ section article:nth-child(1) {
     left: 80%;
     margin-left: -300px;
     top: 0;
-    /* display: none; */
+    display: none;
+}
+
+.ALBUM_CD.add {
+    z-index: 10;
+    display: block;
+}
+
+.ALBUM_CD2.add {
+    z-index: 10;
+    display: block;
+}
+
+.ALBUM_CD3.add {
+    z-index: 10;
+    display: block;
+}
+
+.ALBUM_CD.add {
+    z-index: 10;
+    display: block;
 }
 
 .ALBUM_CD h2 {
+    width: 100%;
+    text-align: center;
     color: #45005E;
     font-size: 40px;
     margin-top: 110px;
@@ -518,7 +540,7 @@ section article:nth-child(1) {
 .ALBUM_CD img {
     width: 400px;
     height: 400px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 
 .ALBUM_CD img.on {
@@ -533,15 +555,16 @@ section article:nth-child(1) {
 }
 
 .ALBUM_CD p {
+    width: 100%;
     color: #45005E;
     font-size: 20px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .ALBUM_CD .playBar {
     position: relative;
-    width: 90%;
+    width: 100%;
     height: 8px;
     border-radius: 40px;
     display: flex;
@@ -580,12 +603,13 @@ section article:nth-child(1) {
 
 
 .ALBUM_CD .playTime {
-    width: 95%;
+    width: 100%;
+    text-align: center;
     display: flex;
     justify-content: space-between;
     font-size: 12px;
     color: #45005E;
-    margin-top: -35px;
+    margin-top: -30px;
 }
 
 .ALBUM_CD .playBtn ul {
@@ -598,7 +622,7 @@ section article:nth-child(1) {
 }
 
 /* 임의설정 */
-.ALBUM_CD .playBtn ul li {
+.ALBUM_CD .playBtn ul li, .ALBUM_CD2 .playBtn ul li, .ALBUM_CD3 .playBtn ul li,  .ALBUM_CD4 .playBtn ul li {
     width: 80px;
     display: flex;
     justify-content: center;
@@ -667,15 +691,18 @@ section article:nth-child(1) {
 }
 
 .ALBUM_CD2 h2 {
+    width: 100%;
+    text-align: center;
     color: #45005E;
     font-size: 40px;
-    margin-top: 80px;
-    margin-bottom: 50px;
+    margin-top: 110px;
+    margin-bottom: 60px;
 }
 
 .ALBUM_CD2 img {
     width: 400px;
     height: 400px;
+    margin-bottom: 50px;
     animation: CD2 10s linear infinite;
     transform-origin: 50% 50%;
 }
@@ -687,21 +714,21 @@ section article:nth-child(1) {
 }
 
 .ALBUM_CD2 p {
+    width: 100%;
     color: #45005E;
     font-size: 20px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .ALBUM_CD2 .playBar {
-    width: 90%;
+    width: 100%;
     height: 8px;
     border-radius: 40px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.1);
-    margin-bottom: 50px;
 }
 
 .ALBUM_CD2 .timeBar {
@@ -713,12 +740,12 @@ section article:nth-child(1) {
 
 
 .ALBUM_CD2 .playTime {
-    width: 95%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     font-size: 12px;
     color: #45005E;
-    margin-top: -35px;
+    margin-top: 20px;
 }
 
 .ALBUM_CD2 .playBtn ul {
@@ -727,8 +754,9 @@ section article:nth-child(1) {
     display: flex;
     justify-content: space-around;
     font-size: 35px;
-    margin-top: 45px;
     cursor: pointer;
+    margin-top: 50px;
+    margin-left: -2.5px;
 }
 
 .ALBUM_CD2 .playBtn i:nth-child(1) {
@@ -772,8 +800,8 @@ section article:nth-child(1) {
 .ALBUM_CD3 h2 {
     color: #45005E;
     font-size: 40px;
-    margin-top: 80px;
-    margin-bottom: 50px;
+    margin-top: 110px;
+    margin-bottom: 60px;
 }
 
 .ALBUM_CD3 img {
@@ -821,7 +849,7 @@ section article:nth-child(1) {
     justify-content: space-between;
     font-size: 12px;
     color: #45005E;
-    margin-top: -35px;
+    margin-top: -100px;
 }
 
 .ALBUM_CD3 .playBtn ul {
@@ -834,12 +862,21 @@ section article:nth-child(1) {
     cursor: pointer;
 }
 
+.ALBUM_CD3 .playBtn li {
+
+}
+
 .ALBUM_CD3 .playBtn i:nth-child(1) {
     margin-right: 40px;
 }
 
+.ALBUM_CD3 .playBtn ul li:nth-child(3) {
+    position: relative;
+}
+
 .ALBUM_CD3 .playBtn ul li:nth-child(3) i {
     color: #45005E;
+    position: absolute;
 }
 
 .ALBUM_CD3 .playBtn ul li:nth-child(3) i:hover {
@@ -873,8 +910,8 @@ section article:nth-child(1) {
 .ALBUM_CD4 h2 {
     color: #45005E;
     font-size: 40px;
-    margin-top: 80px;
-    margin-bottom: 50px;
+    margin-top: 110px;
+    margin-bottom: 60px;
 }
 
 .ALBUM_CD4 img {
@@ -892,7 +929,7 @@ section article:nth-child(1) {
     align-items: center;
     background-color: rgba(0, 0, 0, 0.1);
     margin-bottom: 50px;
-    margin-top: 100px;
+    /* margin-top: 0px; */
 }
 
 .ALBUM_CD4 .timeBar {
@@ -909,7 +946,7 @@ section article:nth-child(1) {
     justify-content: space-between;
     font-size: 12px;
     color: #45005E;
-    margin-top: -35px;
+    margin-top: -110px;
 }
 
 .ALBUM_CD4 .playBtn ul {

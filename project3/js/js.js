@@ -19,8 +19,32 @@ $(document).ready(function () {
 
     // Album1을 클릭하면, 클릭한 앨범의 내용으로 ALBUM_CD가 변경된다
     $('.Album1').click(function () {
+        $('.ALBUM_CD').addClass('add')
+        $('.ALBUM_CD2').removeClass('add')
+        $('.ALBUM_CD3').removeClass('add')
+        $('.ALBUM_CD4').removeClass('add')
+
 
     })
+    $('.Album2').click(function () {
+        $('.ALBUM_CD2').addClass('add')
+        $('.ALBUM_CD').removeClass('add')
+        $('.ALBUM_CD3').removeClass('add')
+        $('.ALBUM_CD4').removeClass('add')
+    })
+    $('.Album3').click(function () {
+        $('.ALBUM_CD3').addClass('add')
+        $('.ALBUM_CD2').removeClass('add')
+        $('.ALBUM_CD').removeClass('add')
+        $('.ALBUM_CD4').removeClass('add')
+    })
+    $('.Album4').click(function () {
+        $('.ALBUM_CD4').addClass('add')
+        $('.ALBUM_CD2').removeClass('add')
+        $('.ALBUM_CD3').removeClass('add')
+        $('.ALBUM_CD').removeClass('add')
+    })
+
 
 
 

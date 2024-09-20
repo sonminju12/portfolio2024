@@ -821,12 +821,16 @@
 }
 
 .juImg1 {
+    position: relative;
+    width: 100%;
     display: flex;
     justify-content: start;
     padding: 100px 0;
 }
 
 .juImg2 {
+    position: relative;
+    width: 100%;
     display: flex;
     padding: 100px 0;
     justify-content: end;
@@ -871,7 +875,9 @@
 }
 
 .section7 .txtBox1 {
-    width: 700px;
+    position: absolute;
+    left: 0;
+    width: 1100px;
     height: 700px;
     display: flex;
     flex-direction: column;
@@ -879,20 +885,26 @@
     align-items: center;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 500px;
-    opacity: 0;
+    border-top-right-radius: 350px;
+    border-bottom-right-radius: 350px;
+    z-index: -1;
+    
 }
 
 .section7 .txtBox1 h4 {
     font-size: 30px;
+    margin-left: 250px;
 }
 .section7 .txtBox1 p {
     font-size: 18px;
     margin-top: 30px;
+    margin-left: 250px;
 }
 
 .section7 .txtBox2 {
-    width: 700px;
+    position: absolute;
+    right: 0;
+    width: 1100px;
     height: 700px;
     display: flex;
     flex-direction: column;
@@ -900,16 +912,20 @@
     align-items: center;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 500px;
+    border-top-left-radius: 350px;
+    border-bottom-left-radius: 350px;
+    z-index: -1;
 }
 
 
 .section7 .txtBox2 h4 {
     font-size: 30px;
+    margin-right: 250px;
 }
 .section7 .txtBox2 p {
     font-size: 18px;
     margin-top: 30px;
+    margin-right: 250px;
 }
 
 
