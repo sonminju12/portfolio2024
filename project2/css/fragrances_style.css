@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Nanum+Myeongjo&display=swap');
 
+/* 기본설정 */
 * {
     padding: 0;
     margin: 0;
@@ -23,10 +24,14 @@ img {
 
 body {
     font-family: "Nanum Myeongjo", serif;
-    font-weight: 400;
+    font-weight: 100;
     font-style: normal;
-    margin-top: 90px;
     overflow-x: hidden;
+}
+
+
+.name img {
+    width: 500px;
 }
 
 ::-webkit-scrollbar {
@@ -39,6 +44,7 @@ body {
     border-radius: 20px;
     background: #000;
 }
+
 
 /* 헤더 */
 header {
@@ -62,7 +68,7 @@ header h1 img {
 }
 
 header nav {
-    width: 100%;
+    width: 1440px;
     display: flex;
     justify-content: space-around;
     text-align: center;

@@ -22,6 +22,7 @@
     <!-- 제이쿼리내부의 스타일 정보 -->
     <script src="js.js"></script>
 
+
 </head>
 
 <body>
@@ -227,48 +228,63 @@
                         <p>컵케익 비누/ 아이스커피비누/ 세안용 비누/ 바디비누 만들기</p>
                     </div>
                 </div>
-                <div class="date">
-                        <img src="img/date.PNG" alt="">
-                    </div>
             </div>
 
+            
+
             <div class="titleBox">
+
+                <div class="timgBox">
+                    <img src="img/pp1.png" alt="">
+                    <img src="img/ww1.png" alt="">
+                    <img src="img/bb1.png" alt="">
+                </div>
+
+
                 <div class="oneBox">
-                    <div class="oneBox1">
-                        <p>
-                            체험명<i class="fa-solid fa-caret-down"></i>
-                        </p>
-                    </div>
+                    <ul>
+                        <li class="oneBox1">
+                            <b>체험명</b>
+                            <select name="select" id="">
+                                <option value="">향수만들기</option>
+                                <option value="">왁스타블렛</option>
+                                <option value="">천연비누</option>
+                            </select>
+                        </li>
 
-                    <div class="oneBox2">
-                        <p>
-                            예약날짜<i class="fa-solid fa-caret-down"></i>
-                        </p>
-                    </div>
+                        <li class="oneBox2">
+                            <b>예약날짜</b><input type="date" name="" id="">
+                        </li>
 
-                    <div class="oneBox3">
-                        <p>
-                            예약시간<i class="fa-solid fa-caret-down"></i>
-                        </p>
-                    </div>
+                        <li class="oneBox3">
+                            <b>예약시간</b>
+                            <select name="select" id="">
+                                <option value="">09:00</option>
+                                <option value="">11:00</option>
+                                <option value="">13:00</option>
+                                <option value="">15:00</option>
+                                <option value="">17:00</option>
+                            </select>
+                        </li>
 
-                    <div class="oneBox4">
-                        <p>
-                            인원수<i class="fa-solid fa-caret-down"></i>
-                        </p>
-                    </div>
+                        <li class="oneBox4">
+                            <b>인원수</b><input type="number" min ="1" max = "10">
+                        </li>
 
-                    <div class="oneBox5">
-                        <p>
-                            전화번호<i class="fa-solid fa-caret-down"></i>
-                        </p>
+                        <li class="oneBox5">
+                            <b>전화번호</b><input type="tel" placeholder="010-0000-0000" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}">
+                        </li>
+                    </ul>
+
+                    <div class="twoBox">
+                        <input type="submit" value="취소">
+                        <input type="button" value="예약">
                     </div>
                 </div>
 
-                <div class="twoBox">
-                    <p>취소</p>
-                    <p>예약</p>
-                </div>
+                <!-- <i class="fa-solid fa-caret-down"></i> -->
+
+
             </div>
         </section>
 
